@@ -1,4 +1,5 @@
-const BASE_URL = ''; // Same domain, relative paths
+import { API_BASE } from '../apiBase';
+const BASE_URL = API_BASE;
 
 export class ApiService {
   static async getVoices() {
