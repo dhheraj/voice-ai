@@ -9,7 +9,8 @@
   <body>
     <div id="root"></div>
 
-    <!-- Popunder (Effective CPM Network) — fires only once per session, on first interaction -->
+    <!-- Popunder (Effective CPM Network) — commented out to prevent redirects on click -->
+    <!--
     <script>
       (function () {
         if (sessionStorage.getItem('popunder-fired')) return;
@@ -29,6 +30,7 @@
         setTimeout(trigger, 8000);
       })();
     </script>
+    -->
 
     <script type="module" src="/src/main.jsx"></script>
   </body>

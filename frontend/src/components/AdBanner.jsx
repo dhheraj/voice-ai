@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { AD_CONFIG } from '../adsConfig';
+import { AD_CONFIG } from '../config/adsConfig';
 
 const FALLBACK_HEIGHT = 100;
 

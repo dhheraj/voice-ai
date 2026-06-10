@@ -57,5 +57,3 @@ export const AD_CONFIG = {
   // Set to true once you have unique ad keys per slot
   useUniqueKeysPerSlot: false,
 };
-
-

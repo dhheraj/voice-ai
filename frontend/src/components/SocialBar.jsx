@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { AD_CONFIG } from '../adsConfig';
+import { AD_CONFIG } from '../config/adsConfig';
 
 // Social Bar — sticky notification-style ad. Loads once per session.
 export default function SocialBar() {
