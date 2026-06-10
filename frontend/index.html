@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice AI - Text to Speech</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Popunder (Effective CPM Network) — fires only once per session, on first interaction -->
+    <script>
+      (function () {
+        if (sessionStorage.getItem('popunder-fired')) return;
+        var fired = false;
+        var trigger = function () {
+          if (fired) return;
+          fired = true;
+          sessionStorage.setItem('popunder-fired', '1');
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://pl29647944.effectivecpmnetwork.com/53/28/19/532819f9ed506e1d9584bb84ef92947e.js';
+          document.body.appendChild(s);
+        };
+        // Fire on the user's first interaction (not on every click)
+        window.addEventListener('click', trigger, { once: true, capture: true });
+        // Fallback: fire after 8 seconds if no click yet
+        setTimeout(trigger, 8000);
+      })();
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

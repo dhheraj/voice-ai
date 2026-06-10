@@ -1,0 +1,51 @@
+.ad-rail {
+  width: 160px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ad-rail .ad-slot {
+  width: 160px !important;
+  height: 600px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  display: block;
+}
+
+.ad-rail .ad-slot-inner {
+  width: 160px !important;
+  height: 600px !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+.ad-rail .ad-label {
+  display: none;
+}
+
+.ad-rail iframe {
+  width: 160px !important;
+  height: 600px !important;
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .ad-rail {
+    display: none;
+  }
+}
